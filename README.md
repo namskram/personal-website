@@ -2,8 +2,6 @@
 
 Small project to get some practice using GitHub Pages with HTML/CSS/JS as well as GitHub flow for solo projects. :hatching_chick:
 
-Start: June 2024
+Live at: https://namskram.github.io/personal-website/
 
-End: July 2024 (I was on vacation for 3 weeks ok)
-
-*Will update periodically
+I was supposed to update this periodically but I gave up
