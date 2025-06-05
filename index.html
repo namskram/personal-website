@@ -2,35 +2,172 @@
 <html lang="en">
    <head>
       <title>Personal Website</title>
+      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
    </head> 
    <body>
       <header>   
          <nav>
-            <a href="index.html">Home</a>
-            <a href="projects/projects.html">Projects</a>
-            <a href="https://www.linkedin.com/in/brandonjdu">LinkedIn</a>
-            <a href="https://github.com/namskram">GitHub</a>
+            <a href="index.html" class="active"><i class="fa fa-home"></i> Home</a>
+            <a href="projects/projects.html"><i class="fa fa-folder-open"></i> Projects</a>
+            <a href="https://www.linkedin.com/in/brandonjdu" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+            <a href="https://github.com/namskram" target="_blank"><i class="fab fa-github"></i> GitHub</a>
          </nav>
       </header>
+      <hr class="section-divider">
       <main>
-         <div class="container">
-            <div class="post-text-box">
-               <h1>Hi, I'm Brandon!</h1>
-               <section>
-                  <h1>About me</h1>
-                  <p>I'm a Mathematics-Computer Science graduate from UCSD whose 
-                     main focus is on Java applications.</p>
-
-                  <p>There's not much here yet, but the website will be updated over time. 
-                     Will also make it look less boring eventually.</p>
-               </section>
+         <div class="site-intro">
+            <h1 class="site-title">Brandon Du</h1>
+            <p class="site-subtitle">Mathematics-Computer Science @ UCSD &mdash; Java Enthusiast</p>
+         </div>
+         <div class="center-block">
+            <button class="arrow left" id="left-arrow"><i class="fa fa-chevron-left"></i></button>
+            <div class="flip-content" id="flip-content">
+               <div class="block-page page-1">
+                  <div class="post-text-box">
+                     <section>
+                        <h1>About Me</h1>
+                        <p>I'm an enthusiastic programmer who likes to take on random projects for fun. 
+                           <br><br>
+                           Alongside programming, I also enjoy reading and playing video games on my spare time.
+                           <br><br>
+                           Some of my interests include RNG manipulation, TAS algorithms, and emulators in video games.
+                        </p>
+                        <p>There's not much here yet, but the website will be updated over time, as I start more projects.</p>
+                     </section>
+                  </div>
+                  <div class="divider"></div>
+                     <div class="visual-box">
+                        <figure class="visual-figure">
+                           <img src="images/profile_pic.png" alt="my pic">
+                           <figcaption class="img-caption"></figcaption>
+                        </figure>
+                     </div>
+               </div>
+               <div class="block-page page-2" style="display:none;">
+                  <div class="post-text-box">
+                     <h1>Skills</h1>
+                     <div class="skills-list">
+                        <span title="Java"><i class="fab fa-java"></i> Java</span>
+                        <span title="Python"><i class="fab fa-python"></i> Python</span>
+                        <span title="JavaScript"><i class="fab fa-js-square"></i> JavaScript</span>
+                        <span title="TypeScript"><i class="fab fa-js"></i> TypeScript</span>
+                        <span title="Angular"><i class="fab fa-angular"></i> Angular</span>
+                        <span title="HTML5"><i class="fab fa-html5"></i> HTML5</span>
+                        <span title="CSS3"><i class="fab fa-css3-alt"></i> CSS3</span>
+                        <span title="Git"><i class="fab fa-git-alt"></i> Git</span>
+                        <span title="Unix"><i class="fas fa-terminal"></i> Unix</span>
+                     </div>
+                  </div>
+                  <div class="divider"></div>
+                  <figure class="visual-figure">
+                     <a href="https://www.credly.com/badges/4afcbf6d-1b67-49a5-af3f-201e103c6c4a">
+                        <img src="https://images.credly.com/size/340x340/images/024d0122-724d-4c5a-bd83-cfe3c4b7a073/image.png" width="250" alt="gh cert">
+                     </a>
+                     <figcaption class="img-caption">GitHub Foundations Certificate</figcaption>
+                  </figure>
+               </div>
+               <div class="block-page page-3" style="display:none;">
+                  <div class="post-text-box">
+                     <h1>Featured Project</h1>
+                     <div class="featured-project-card">
+                        <h2>Platformer Game: "Sir Tet"</h2>
+                        <p>I made a platform game that combines elements of Tetris with platforming. <br><br> Try it out!</p>
+                        <a href="https://github.com/namskram/sir-tet" class="project-link" target="_blank">
+                           <i class="fa fa-arrow-right"></i> View Project
+                        </a>
+                     </div>
+                  </div>
+                  <div class="divider"></div>
+                  <div class="visual-box">
+                     <figure class="visual-figure">
+                        <div class="gif-zoom-wrapper">
+                           <img src="images/gameplay.gif" alt="Game Demo" class="game-img">
+                        </div>
+                        <figcaption class="img-caption">What the game looks like</figcaption>
+                     </figure>
+                  </div>
+               </div>
+               <div class="block-page page-4" style="display:none;">
+                  <div class="post-text-box">
+                     <h1>Resume</h1>
+                     <br>
+                     <p>Download my resume below, or click the image to quickly view it:</p>
+                     <a href="images/Brandon J Du Resume June 2025.pdf" class="resume-btn" download>
+                        <i class="fa fa-file-pdf"></i> Download Resume (PDF)
+                     </a>
+                     <br><br><br><br><br><br>
+                  </div>
+                  <div class="divider"></div>
+                  <div class="visual-box">
+                     <figure class="visual-figure">
+                        <img src="images/resume.png" alt="resume pic">
+                        <figcaption class="img-caption">Resume preview</figcaption>
+                     </figure>
+                  </div>
+               </div>
+               <div class="block-page page-5" style="display:none;">
+                  <div class="post-text-box">
+                     <h1>Fun Facts & Hobbies</h1>
+                     <ul class="fun-facts">
+                        <li>I love to run; the longest run I've done is around 15 miles</li>
+                        <li>I enjoy travelling often; I've been all around the US, Europe, and Asia</li>
+                        <li>I spent two years working part-time as a lighting/soundboard technician for events</li>
+                        <li>I can also speak Vietnamese, Cantonese, Japanese, and Spanish to varying degrees</li>
+                        <li>I love both dogs and cats, but I am slightly partial to dogs</li>
+                     </ul>
+                  </div>
+                  <div class="divider"></div>
+                  <div class="visual-box">
+                     <figure class="visual-figure">
+                        <img src="images/dog.png" alt="dog pic">
+                        <figcaption class="img-caption">This is my dog, Tigger</figcaption>
+                     </figure>
+                  </div>
+               </div>
+               <div class="block-page page-6" style="display:none;">
+                  <div class="post-text-box">
+                     <h1>Experience Timeline</h1>
+                     <div class="timeline">
+                        <div class="timeline-item">
+                           <div class="timeline-dot"></div>
+                           <div class="timeline-content">
+                              <strong>2021-2024:</strong> UCSD Mathematics-Computer Science B.S.
+                           </div>
+                        </div>
+                        <div class="timeline-item">
+                           <div class="timeline-dot"></div>
+                           <div class="timeline-content">
+                              <strong>2023-2024:</strong> Student Intern, Los Angeles Police Department
+                           </div>
+                        </div>
+                        <div class="timeline-item">
+                           <div class="timeline-dot"></div>
+                           <div class="timeline-content">
+                              <strong>2024-2025:</strong> AI Trainer, DataAnnotation Tech
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="divider"></div>
+                  <div class="visual-box">
+                     <figure class="visual-figure">
+                        <img src="images/UCSD_Seal.png" alt="UCSD">
+                        <figcaption class="img-caption"></figcaption>
+                     </figure>
+                  </div>
+               </div>
             </div>
-            <div class="profile">
-               <img src="images/profile_pic.jpg">
-            </div>  
-         </div>     
+            <button class="arrow right" id="right-arrow"><i class="fa fa-chevron-right"></i></button>
+         </div>
       </main>
+      <footer>
+         <hr class="section-divider">
+         <p>&copy; 2025 Brandon Du. All rights reserved.</p>
+      </footer>
+      <div id="resume-lightbox-overlay">
+         <img id="resume-lightbox-img" src="" alt="Resume Preview">
+      </div>
+      <script src="index.js"></script>
    </body>
-   <link rel="stylesheet" href="style.css">
-   <script src="index.js"></script>
 </html>

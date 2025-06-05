@@ -2,75 +2,129 @@
 <html lang="en">
     <head>
         <title>List of Projects</title>
+        <link rel="stylesheet" href="projects.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     </head>
     <body>
         <header>
             <nav>
-                <a href="../index.html">Home</a>
-                <a href="projects.html">Projects</a>
-                <a href="https://www.linkedin.com/in/brandonjdu">LinkedIn</a>
-                <a href="https://github.com/namskram">GitHub</a>
-             </nav>
+                <a href="../index.html"><i class="fa fa-home"></i> Home</a>
+                <a href="projects.html" class="active"><i class="fa fa-folder-open"></i> Projects</a>
+                <a href="https://www.linkedin.com/in/brandonjdu" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                <a href="https://github.com/namskram" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+            </nav>
         </header>
         <main>
-            <div class="container">
-                <div class="titles">
-                    <h1>List of Projects</h1>
-                </div>
-                <div class="descriptions">
-                    <h1>Description</h1>
-                </div>
-            </div>
-            <div class="container">
-                <div class="titles">
-                    <div class="project">
-                        <h3>Personal Website</h3>
+            <section class="projects-hero">
+                <h1>My Projects</h1>
+                <p>Here are some things I've built and am proud of.</p>
+            </section>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image placeholder-img">
+                        <i class="fa fa-user fa-3x"></i>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-top">
+                            <h2>Personal Website</h2>
+                            <p>This website! Built to showcase my work and skills.</p>
+                        </div>
+                        <div class="project-gallery">
+                            <button class="gallery-arrow left" aria-label="Previous image">
+                                <i class="fa fa-chevron-left"></i>
+                            </button>
+                            <img src="/images/web1.png" alt="Personal Website Screenshot 1" class="gallery-img active">
+                            <img src="/images/web2.png" alt="Personal Website Screenshot 2" class="gallery-img">
+                            <button class="gallery-arrow right" aria-label="Next image">
+                                <i class="fa fa-chevron-right"></i>
+                            </button>
+                        </div>
+                        <div class="project-bottom"></div>
                     </div>
                 </div>
-                <div class="descriptions">
-                    <div class="desc">
-                        <p>Website containing details about myself, my current
-                            projects, and everything else I am working on.
-                        </p>
+                <div class="project-card">
+                    <div class="project-image placeholder-img">
+                        <i class="fa fa-calculator fa-3x"></i>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-top">
+                            <h2>Equipment Calculator (Web App)</h2>
+                            <p>Uses Tesseract OCR to calculate optimal relic stats for gear in Honkai Star Rail.</p>
+                        </div>
+                        <div class="project-gallery">
+                            <button class="gallery-arrow left" aria-label="Previous image">
+                                <i class="fa fa-chevron-left"></i>
+                            </button>
+                            <img src="/images/demo.png" alt="Equipment Calculator Screenshot 1" class="gallery-img active">
+                            <img src="/images/select.png" alt="Equipment Calculator Screenshot 2" class="gallery-img">
+                            <img src="/images/upload.png" alt="Equipment Calculator Screenshot 3" class="gallery-img">
+                            <img src="/images/history.png" alt="Equipment Calculator Screenshot 4" class="gallery-img">
+                            <button class="gallery-arrow right" aria-label="Next image">
+                                <i class="fa fa-chevron-right"></i>
+                            </button>
+                        </div>
+                        <div class="project-bottom">
+                            <a href="https://github.com/namskram/ec-site" class="project-link" target="_blank">View Demo</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="container">
-                <div class="titles">
-                    <div class="project">
-                        <h3>Equipment Calculator</h3>
+                <div class="project-card">
+                    <div class="project-image placeholder-img">
+                        <i class="fa fa-gamepad fa-3x"></i>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-top">
+                            <h2>Sir Tet (Java App)</h2>
+                            <p>A playable platformer game that combines Tetris with a bullet hell platformer.</p>
+                        </div>
+                        <div class="project-gallery">
+                            <button class="gallery-arrow left" aria-label="Previous image">
+                                <i class="fa fa-chevron-left"></i>
+                            </button>
+                            <img src="/images/game.png" alt="Game Screenshot 1" class="gallery-img active">
+                            <img src="/images/boss-incoming.png" alt="Game Screenshot 2" class="gallery-img">
+                            <img src="/images/boss-fight.png" alt="Game Screenshot 3" class="gallery-img">
+                            <img src="/images/game-over.png" alt="Game Screenshot 4" class="gallery-img">
+                            <button class="gallery-arrow right" aria-label="Next image">
+                                <i class="fa fa-chevron-right"></i>
+                            </button>
+                        </div>
+                        <div class="project-bottom">
+                            <a href="https://github.com/namskram/sir-tet" class="project-link" target="_blank">Play Now</a>
+                        </div>
                     </div>
                 </div>
-                <div class="descriptions">
-                    <div class="desc">
-                        <p>Basic program that uses Tesseract OCR software to calculate 
-                            optimal relic stats for gear in Honkai Star Rail.</p>
+                <div class="project-card">
+                    <div class="project-image placeholder-img">
+                        <i class="fab fa-android fa-3x"></i>
                     </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="titles">
-                    <div class="project">
-                        <h3>TBD</h3>
-                    </div>
-                </div>
-                <div class="descriptions">
-                    <div class="desc">
-                        <p>TBD</p>
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="titles-fill">
-                    <div class="project">
-                    </div>
-                </div>
-                <div class="descriptions">
-                    <div class="desc-fill">
+                    <div class="project-content">
+                        <div class="project-top">
+                            <h2>Social Compass (Android App)</h2>
+                            <p>A mobile app for meeting up with friends in real time.</p>
+                        </div>
+                        <div class="project-gallery">
+                            <button class="gallery-arrow left" aria-label="Previous image">
+                                <i class="fa fa-chevron-left"></i>
+                            </button>
+                            <img src="/images/sc1.png" alt="Android App Screenshot 1" class="gallery-img active">
+                            <img src="/images/sc2.png" alt="Android App Screenshot 2" class="gallery-img">
+                            <img src="/images/sc3.png" alt="Android App Screenshot 3" class="gallery-img">
+                            <img src="/images/sc4.png" alt="Android App Screenshot 4" class="gallery-img">
+                            <button class="gallery-arrow right" aria-label="Next image">
+                                <i class="fa fa-chevron-right"></i>
+                            </button>
+                        </div>
+                        <div class="project-bottom">
+                            <a href="https://github.com/namskram/cse-110-project-cse-110-team-11" class="project-link" target="_blank">View on GitHub</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </main>
+        <div id="lightbox-overlay">
+            <img id="lightbox-img" src="" alt="Enlarged project image">
+        </div>
+        <script src="projects.js"></script>
     </body>
-    <link rel="stylesheet" href="projects.css">
 </html>
